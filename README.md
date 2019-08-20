@@ -1,39 +1,42 @@
 # TCA Project
 
 ## About
-==============
-This repo contains MEBN SW, HML-UnBBayes SW, and extenstions for the TCA project. All further documentation in this repo relates only to SW and its installation. If you are looking for general documentation about the whole HML-UnBBayes and how to use, please visit https://hml-unbbayes.github.io/.
+This repo contains MEBN SW, HML-UnBBayes SW, and extenstions for the TCA project. 
+All further documentation in this repo relates only to SW and its installation. 
+If you are looking for general documentation about the whole HML-UnBBayes and how to use, please visit https://hml-unbbayes.github.io/.
 
-Features
-MEBN SW
-MEBN Moedling
-Discrete MEBN Reasoning
-Discrete BN Reasoning
-HML-UnBBayes
-MEBN Machine Learning
-Relational Database Association
-World Model Manangement
-RDB Joining Conditions
-Class Local Distribution
-Hybrid Model Machine Learning
-Hybrid MEBN Reasoning
-Hybrid BN Contruction
-Hybrid BN Reasoning
-Sampling Algorithm
-Message Passing Algorithm
-Junction Tree Algorithm
-Brief Buidling Instrcution
+## Features
+### MEBN SW
+- MEBN Moedling
+- Discrete MEBN Reasoning
+- Discrete BN Reasoning
+
+### HML-UnBBayes
+- MEBN Machine Learning
+  - Relational Database Association
+  - World Model Manangement
+  - RDB Joining Conditions
+  - Class Local Distribution
+  - Hybrid Model Machine Learning
+- Hybrid MEBN Reasoning
+  - Hybrid BN Contruction
+- Hybrid BN Reasoning
+  - Sampling Algorithm
+  - Message Passing Algorithm
+  - Junction Tree Algorithm
+  
+## Brief Buidling Instrcution
 This instruction assumes that you are using Windows.
 
-Prerequisites
+### Prerequisites
 The following pakages are needed for executing MEBN machine learning and reasoning codes
+- Eclipse
+- MySQL
 
-Eclipse
-MySQL
-Code Execution
+### Code Execution
 The directory "mebn.run" contains all codes for the TCA project. To run HML-UnBBayes, use the file HML_UnBBayes.jar in the directory hml_UnBBayes.
 
-AUTHORS AND COPYING
+## AUTHORS AND COPYING
 This project repo is maintained by BAIES.
 
 Copyright (C) 2016 ~ 2019, BAIES, LLC.
