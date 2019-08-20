@@ -25,7 +25,7 @@ If you are looking for general documentation about the whole HML-UnBBayes and ho
   - Message Passing Algorithm
   - Junction Tree Algorithm
   
-## Brief Buidling Instrcution
+## Brief Building Instrcution
 This instruction assumes that you are using Windows.
 
 ### Prerequisites
