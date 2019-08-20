@@ -34,7 +34,8 @@ The following pakages are needed for executing MEBN machine learning and reasoni
 - MySQL
 
 ### Code Execution
-The directory "mebn.run" contains all codes for the TCA project. To run HML-UnBBayes, use the file HML_UnBBayes.jar in the directory hml_UnBBayes.
+The directory "POSTECH/src/mebn/run/" contains all codes for the TCA project. 
+To run HML-UnBBayes, use the file HML_UnBBayes.jar in the directory hml_UnBBayes.
 
 ## AUTHORS AND COPYING
 This project repo is maintained by BAIES.
