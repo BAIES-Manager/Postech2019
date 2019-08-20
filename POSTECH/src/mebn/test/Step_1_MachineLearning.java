@@ -24,7 +24,7 @@ import mebn_rm.util.TextFile;
 import util.ListMgr;
 import util.SortableValueMap; 
 
-public class Step_1_MachineLerning { 
+public class Step_1_MachineLearning { 
     SortableValueMap<String, List<Double>> mapResults = new SortableValueMap<String, List<Double>>();
     SortableValueMap<String, Sensitivity_Specificity_score> mapAUC = new SortableValueMap<String, Sensitivity_Specificity_score>();
      SortableValueMap<Integer, SortableValueMap<String, List<Double>>> mapSBN_CRPSs = new SortableValueMap<Integer, SortableValueMap<String, List<Double>>> ();
@@ -426,7 +426,7 @@ public class Step_1_MachineLerning {
     }
     
     public static void main(String[] args) throws SQLException {   
-    	Step_1_MachineLerning t = new Step_1_MachineLerning();
+    	Step_1_MachineLearning t = new Step_1_MachineLearning();
     	
     	//1. The ideal model which was made by Prof. Lee is used for MEBN learning
     	t.run_for_Ideal_Model();
