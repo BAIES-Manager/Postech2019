@@ -1,4 +1,4 @@
-package mebn.test;
+package mebn.run;
   
 import java.awt.Toolkit;
 import java.sql.SQLException;

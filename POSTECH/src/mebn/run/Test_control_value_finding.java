@@ -1,4 +1,4 @@
-package mebn.test;
+package mebn.run;
   
 import hmlp.rs.cps.CPSCompilerMain; 
 import mebn_rm.util.TextFile;
