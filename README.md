@@ -29,12 +29,13 @@ If you are looking for general documentation about the whole HML-UnBBayes and ho
 This instruction assumes that you are using Windows.
 
 ### Prerequisites
-The following pakages are needed for executing MEBN machine learning and reasoning codes
+The following pakages are needed for executing MEBN machine learning and reasoning codes.
 - Eclipse
 - MySQL
 
 ### Code Execution
 The directory "POSTECH/src/mebn/run/" contains all codes for the TCA project. 
+
 To run HML-UnBBayes, use the file HML_UnBBayes.jar in the directory hml_UnBBayes.
 
 ## AUTHORS AND COPYING
