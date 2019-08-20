@@ -1,7 +1,7 @@
 # TCA Project
 
 ## About
-This repo contains MEBN SW, HML-UnBBayes SW, and extenstions for the TCA project. 
+This repo contains MEBN SW, HML-UnBBayes SW, and extenstion codes for the TCA project. 
 All further documentation in this repo relates only to SW and its installation. 
 If you are looking for general documentation about the whole HML-UnBBayes and how to use, please visit https://hml-unbbayes.github.io/.
 
