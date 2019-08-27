@@ -7,3 +7,12 @@
 2019.08.20 15:29:12.968 EDT INFO: [TripleChangePostProcessor] Completed properties after 12 ms -- TripleChangePostProcessor.log()
 2019.08.20 15:29:12.977 EDT INFO: [TripleChangePostProcessor] Completed named classes after 7 ms -- TripleChangePostProcessor.log()
 2019.08.20 15:29:12.978 EDT INFO: ... Loading completed after 286 ms -- ProtegeOWLParser.loadTriples()
+2019.08.21 14:40:22.884 EDT INFO: *** SYSTEM START ***
+2019.08.21 14:40:23.255 EDT INFO: Loading triples -- ProtegeOWLParser.loadTriples()
+2019.08.21 14:40:23.547 EDT INFO: [ProtegeOWLParser] Completed triple loading after 244 ms -- ProtegeOWLParser.loadTriples()
+2019.08.21 14:40:23.567 EDT INFO: [TripleChangePostProcessor] Completed lists after 0 ms -- TripleChangePostProcessor.log()
+2019.08.21 14:40:23.573 EDT INFO: [TripleChangePostProcessor] Completed anonymous classes after 6 ms -- TripleChangePostProcessor.log()
+2019.08.21 14:40:23.574 EDT INFO: [TripleChangePostProcessor] Completed deprecated classes after 1 ms -- TripleChangePostProcessor.log()
+2019.08.21 14:40:23.588 EDT INFO: [TripleChangePostProcessor] Completed properties after 13 ms -- TripleChangePostProcessor.log()
+2019.08.21 14:40:23.595 EDT INFO: [TripleChangePostProcessor] Completed named classes after 6 ms -- TripleChangePostProcessor.log()
+2019.08.21 14:40:23.596 EDT INFO: ... Loading completed after 293 ms -- ProtegeOWLParser.loadTriples()
