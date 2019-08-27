@@ -28,15 +28,8 @@
 	<classpathentry kind="lib" path="lib/commons-collections-3.1.jar"/>
 	<classpathentry kind="lib" path="lib/concurrent.jar"/>
 	<classpathentry kind="lib" path="lib/stringtemplate-3.2.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MEBN_LN"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MEBN_RM"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ModelerLib"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cps"/>
 	<classpathentry kind="lib" path="/ModelerLib/lib/commons-math3-3.6.1.jar"/>
 	<classpathentry kind="lib" path="/ModelerLib/lib/opencsv.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/edu.gmu.seor.prognos.unbbayesplugin.continuous"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MEBN"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/UnBBayes"/>
 	<classpathentry kind="lib" path="lib/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-csv-1.5.jar"/>
 	<classpathentry kind="lib" path="lib/commons-lang3-3.5.jar"/>
@@ -61,5 +54,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="hml_UnBBayes/HML_UnBBayes.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

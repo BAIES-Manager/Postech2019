@@ -110,8 +110,11 @@ public class Step_1_MachineLearning_Original {
         resourceCheckEnd();
          
     	//////////////////////////////////////////////////////////////////
-        // 7. Convert from m to a MEBN in UnBBayes 
-        new OpenMEBNeditor().run1(m, "projects//ROOT_MTheory_1//Output//learnedMEBN.ubf");
+        // 7. Convert from m to a MEBN in UnBBayes
+        // To save a MEBN file, cps, continuous, MEBN_LM, MEBN_RM, UnBBayes, MEBN are required
+        // and HML_UnBBayes.Jar should be removed in the project setting. 
+        
+        // new OpenMEBNeditor().run1(m, "projects//ROOT_MTheory_1//Output//learnedMEBN.ubf");
         
     	//////////////////////////////////////////////////////////////////
         // construct a script BN from a learned MEBN model 
