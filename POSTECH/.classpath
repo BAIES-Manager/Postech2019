@@ -54,12 +54,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/cps"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/edu.gmu.seor.prognos.unbbayesplugin.continuous"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MEBN"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MEBN_LN"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MEBN_RM"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ModelerLib"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/UnBBayes"/>
+	<classpathentry kind="lib" path="lib/mebn_ln.jar"/>
+	<classpathentry kind="lib" path="lib/mebn_rm.jar"/>
+	<classpathentry kind="lib" path="lib/modelerlib.jar"/>
+	<classpathentry kind="src" path="/edu.gmu.seor.prognos.unbbayesplugin.continuous"/>
+	<classpathentry kind="src" path="/UnBBayes"/>
+	<classpathentry kind="src" path="/MEBN"/>
+	<classpathentry kind="src" path="/cps"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
