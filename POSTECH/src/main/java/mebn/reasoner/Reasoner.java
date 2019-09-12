@@ -128,9 +128,7 @@ public class Reasoner {
     public String checkTargets(String typeReasoner, SortableValueMap<String, List<Double>> mapResults, SortableValueMap<String, Sensitivity_Specificity_score> mapAUC, List<String> targetRVs, List<String> evs,  Map<Integer, String> mapColumn, Map<Integer, String> mapData) {
         Double threshold = 0.3;
         String groundTruth = "";
-        if (typeReasoner.equalsIgnoreCase("DMP_1gmr")) {
-            typeReasoner = "DMP";
-        }
+        
         EDBUnit exactNodes = EDB.This().get("ROOT.ENGINES." + typeReasoner + ".NODES");
         EDBUnit exactISA = exactNodes.getRel("ISA");
         Brier_score brier = new Brier_score();
@@ -181,21 +179,7 @@ public class Reasoner {
 	                
 	                Double mu = predictiveBel.get("MU").getMatrixData();
 	                Double var = predictiveBel.get("SIGMA").getMatrixData();
-	                Double actual = Double.valueOf(getTrueData(str, mapColumn, mapData)); 
-	                Double crps = Continuous_ranked_probability_score.run(mu, var, actual);
-	                
-	                // Set an actual value
-	                List actuals;
-	                String key_actual = str + "_Actual";
-	                if (mapResults.containsKey((Object)key_actual)) {
-	                	actuals = (List)mapResults.get((Object)key_actual);
-	                	actuals.add(actual);
-	                } else {
-	                	actuals = new ArrayList();
-	                    mapResults.put(key_actual, actuals);
-	                    actuals.add(actual);
-	                }
-	                
+	               
 	                // Set MU
 	                List mus;
 	                String key_mu = str + "_MU";
@@ -220,16 +204,34 @@ public class Reasoner {
 	                    vars.add(var);
 	                }
 	                
-	                // Set CRPS
-	                List scores;
-	                String key_crps = str + "_CRPS";
-	                if (mapResults.containsKey((Object)key_crps)) {
-	                    scores = (List)mapResults.get((Object)key_crps);
-	                    scores.add(crps);
-	                } else {
-	                    scores = new ArrayList();
-	                    mapResults.put(key_crps, scores);
-	                    scores.add(crps);
+	                String trueData = getTrueData(str, mapColumn, mapData);
+	                if (!trueData.isEmpty()) {
+		                Double actual = Double.valueOf(trueData); 
+		                Double crps = Continuous_ranked_probability_score.run(mu, var, actual);
+		                
+		                // Set an actual value
+		                List actuals;
+		                String key_actual = str + "_Actual";
+		                if (mapResults.containsKey((Object)key_actual)) {
+		                	actuals = (List)mapResults.get((Object)key_actual);
+		                	actuals.add(actual);
+		                } else {
+		                	actuals = new ArrayList();
+		                    mapResults.put(key_actual, actuals);
+		                    actuals.add(actual);
+		                }
+		                
+		                // Set CRPS
+		                List scores;
+		                String key_crps = str + "_CRPS";
+		                if (mapResults.containsKey((Object)key_crps)) {
+		                    scores = (List)mapResults.get((Object)key_crps);
+		                    scores.add(crps);
+		                } else {
+		                    scores = new ArrayList();
+		                    mapResults.put(key_crps, scores);
+		                    scores.add(crps);
+		                }
 	                }
             	} else if (evs.contains(str)) {
             		evidence.print("");

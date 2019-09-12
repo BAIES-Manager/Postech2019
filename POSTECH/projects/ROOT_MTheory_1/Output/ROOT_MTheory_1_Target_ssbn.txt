@@ -1,0 +1,75 @@
+defineNode(X1_InP , Desc); 
+{
+defineState(Continuous); 
+p( X1_InP ) = 
+NormalDist( 2.74727, 0.09799);}
+defineNode(X2_InP , Desc); 
+{
+defineState(Continuous); 
+p( X2_InP ) = 
+NormalDist( 25.15783, 346.04658);}
+defineNode(X3_InP , Desc); 
+{
+defineState(Continuous); 
+p( X3_InP ) = 
+NormalDist( 25.296, 343.62319);}
+defineNode(X4_InP , Desc); 
+{
+defineState(Continuous); 
+p( X4_InP ) = 
+NormalDist( 693.83667, 656.76812);}
+defineNode(X5_InP , Desc); 
+{
+defineState(Continuous); 
+p( X5_InP ) = 
+NormalDist( 4143.935, 938118.10164);}
+defineNode(X6_InP , Desc); 
+{
+defineState(Continuous); 
+p( X6_InP ) = 
+NormalDist( 4108.13333, 979626.4809);}
+defineNode(X7_InP , Desc); 
+{
+defineState(Continuous); 
+p( X7_InP ) = 
+NormalDist( 1170.61667, 2450.74887);}
+defineNode(X8_InP , Desc); 
+{
+defineState(Continuous); 
+p( X8_InP ) = 
+NormalDist( 972.63333, 10588.47345);}
+defineNode(X9_InP , Desc); 
+{
+defineState(Continuous); 
+p( X9_InP ) = 
+NormalDist( 267.33333, 611.07345);}
+defineNode(X10_InP , Desc); 
+{
+defineState(Continuous); 
+p( X10_InP ) = 
+NormalDist( 1853.78333, 137765.02006);}
+defineNode(X11_InP , Desc); 
+{
+defineState(Continuous); 
+p( X11_InP ) = 
+NormalDist( 2847.85, 157374.02797);}
+defineNode(X12_InP , Desc); 
+{
+defineState(Continuous); 
+p( X12_InP ) = 
+NormalDist( 0.28965, 0.00512);}
+defineNode(X13_InP , Desc); 
+{
+defineState(Continuous); 
+p( X13_InP ) = 
+NormalDist( 4.03333, 7.93107);}
+defineNode(X14_InP , Desc); 
+{
+defineState(Continuous); 
+p( X14_InP ) = 
+NormalDist( 18, 12.74576);}
+defineNode(Y_InP , Desc); 
+{
+defineState(Continuous); 
+p( Y_InP | X1_InP , X2_InP , X3_InP , X4_InP , X5_InP , X6_InP , X7_InP , X8_InP , X9_InP , X10_InP , X11_InP , X12_InP , X13_InP , X14_InP  ) = 
+0.01777 * X1_InP + -0.07396 * X2_InP + 1.06697 * X3_InP + -0.01012 * X4_InP + -0.00008 * X5_InP + 0.0015 * X6_InP + -0.00182 * X7_InP + -0.0015 * X8_InP + -0.00185 * X9_InP + 0.00003 * X10_InP + 0.00004 * X11_InP + -0.18447 * X12_InP + -0.00831 * X13_InP + 0.01314 * X14_InP + NormalDist( 7.84403, 0.00277);}

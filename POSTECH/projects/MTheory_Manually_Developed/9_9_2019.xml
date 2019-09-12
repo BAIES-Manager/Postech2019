@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<xbifns:XMLBIF version="0.6" xmlns:xbifns="http://unbbayes.sourceforge.net/xml/XMLBIF_0_6.xsd">
+  <xbifns:header>
+    <xbifns:version>1.0</xbifns:version>
+    <xbifns:name>New BN</xbifns:name>
+    <xbifns:creator>UnBBayes</xbifns:creator>
+  </xbifns:header>
+  <xbifns:staticProperty>
+    <xbifns:nodeSize>0</xbifns:nodeSize>
+    <xbifns:nodeFontSize>0</xbifns:nodeFontSize>
+    <xbifns:colorUtilityNode>0</xbifns:colorUtilityNode>
+    <xbifns:colorDecisionNode>0</xbifns:colorDecisionNode>
+    <xbifns:colorDiscreteProbabilisticNode>0</xbifns:colorDiscreteProbabilisticNode>
+    <xbifns:colorContinuousProbilisticNode>0</xbifns:colorContinuousProbilisticNode>
+    <xbifns:colorExplanationNode>0</xbifns:colorExplanationNode>
+  </xbifns:staticProperty>
+  <xbifns:hierarchy/>
+  <xbifns:network>
+    <xbifns:variables>
+      <xbifns:variable rgbColor="-256" height="60.0" width="165.0" yPos="154" xPos="98" type="ContinuousProbabilistic" name="temp_pass_plan_p1">
+        <xbifns:description>ContinuousNode12</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="166.0" yPos="225" xPos="99" type="ContinuousProbabilistic" name="width_pass_plan_p1">
+        <xbifns:description>ContinuousNode13</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="184.0" yPos="369" xPos="88" type="ContinuousProbabilistic" name="passreduction_th_rc_p1">
+        <xbifns:description>ContinuousNode14</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="147.0" yPos="296" xPos="107" type="ContinuousProbabilistic" name="th_pass_plan_p1">
+        <xbifns:description>ContinuousNode15</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="244.0" yPos="225" xPos="334" type="ContinuousProbabilistic" name="mil_stand_vertical_deformation_p1">
+        <xbifns:description>ContinuousNode16</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="169.0" yPos="115" xPos="371" type="ContinuousProbabilistic" name="rolling_speed_rm_p1">
+        <xbifns:description>ContinuousNode17</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="116.0" yPos="227" xPos="612" type="ContinuousProbabilistic" name="roll_gap_p1">
+        <xbifns:description>ContinuousNode18</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="124.0" yPos="226" xPos="765" type="ContinuousProbabilistic" name="thickness_p1">
+        <xbifns:description>ContinuousNode19</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="135.0" yPos="83" xPos="113" type="ContinuousProbabilistic" name="strength_yp_p1">
+        <xbifns:description>ContinuousNode20</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="147.0" yPos="327" xPos="374" type="ContinuousProbabilistic" name="mill_modulus_p1">
+        <xbifns:description>ContinuousNode21</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="96.0" yPos="328" xPos="621" type="ContinuousProbabilistic" name="DNA_p1">
+        <xbifns:description>ContinuousNode22</xbifns:description>
+      </xbifns:variable>
+    </xbifns:variables>
+    <xbifns:structure>
+      <xbifns:edge child="mil_stand_vertical_deformation_p1" parent="strength_yp_p1"/>
+      <xbifns:edge child="mil_stand_vertical_deformation_p1" parent="temp_pass_plan_p1"/>
+      <xbifns:edge child="mil_stand_vertical_deformation_p1" parent="width_pass_plan_p1"/>
+      <xbifns:edge child="mil_stand_vertical_deformation_p1" parent="th_pass_plan_p1"/>
+      <xbifns:edge child="mil_stand_vertical_deformation_p1" parent="passreduction_th_rc_p1"/>
+      <xbifns:edge child="mil_stand_vertical_deformation_p1" parent="rolling_speed_rm_p1"/>
+      <xbifns:edge child="roll_gap_p1" parent="mill_modulus_p1"/>
+      <xbifns:edge child="roll_gap_p1" parent="mil_stand_vertical_deformation_p1"/>
+      <xbifns:edge child="roll_gap_p1" parent="DNA_p1"/>
+      <xbifns:edge child="thickness_p1" parent="roll_gap_p1"/>
+    </xbifns:structure>
+    <xbifns:conditionalDistributionSet>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="temp_pass_plan_p1"/>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="width_pass_plan_p1"/>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="passreduction_th_rc_p1"/>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="th_pass_plan_p1"/>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="mil_stand_vertical_deformation_p1"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="temp_pass_plan_p1"/>
+          <xbifns:parent index="1" name="width_pass_plan_p1"/>
+          <xbifns:parent index="2" name="th_pass_plan_p1"/>
+          <xbifns:parent index="3" name="passreduction_th_rc_p1"/>
+          <xbifns:parent index="4" name="rolling_speed_rm_p1"/>
+        </xbifns:parents>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="rolling_speed_rm_p1"/>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="roll_gap_p1"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="mil_stand_vertical_deformation_p1"/>
+          <xbifns:parent index="1" name="DNA_p1"/>
+        </xbifns:parents>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="thickness_p1"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="roll_gap_p1"/>
+        </xbifns:parents>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="strength_yp_p1"/>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="mill_modulus_p1"/>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="DNA_p1"/>
+        <xbifns:CPT/>
+      </xbifns:conditionalDistribution>
+    </xbifns:conditionalDistributionSet>
+  </xbifns:network>
+</xbifns:XMLBIF>
